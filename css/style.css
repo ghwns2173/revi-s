@@ -848,8 +848,9 @@ label{
   }
 
   .sec_02 .container{
-    padding-top: 70px;
-    padding-bottom: 100px;
+    /* padding-top: 70px; */
+    /* padding-bottom: 100px; */
+    padding: 70px 16px 100px 16px;
   }
 
   .sec_04 .center{
@@ -1018,4 +1019,61 @@ label{
     font-size: 18px;
   }
 
+  .sec_01 .inner_text_box .subtext,
+  .sec_04 .inner_text_box .subtext{
+    font-size: 10px;
+  }
+
+  .sec_01 .inner_text_box .more_btn,
+  .sec_04 .inner_text_box .more_btn{
+    width: 120px;
+    height: 40px;
+  }
+
+  .sec_02 .subtext{
+    font-size: 10px;
+  }
+
+  .sec_03 .headtext span{
+    font-size: 20px;
+  }
+
+  .sec_03 .headtext .big_text{
+    font-size: 30px;
+  }
+
+  .sec_03 .left_box .subtext{
+    font-size: 14px;
+  }
+
+  .sec_03 .left_box .shop_btn{
+    font-size: 12px;
+  }
+
+  .sec_04 .red_box .center .right .subtext{
+    font-size: 12px;
+  }
+
+    .sec_04 .top_text .headtext{
+    font-size: 18px;
+  }
+
+  .sec_05 .headtext{
+    font-size: 20px;
+  }
+
+  .sec_05 .col_box .named{
+    font-size: 1rem;
+  }
+
+  .f_top .footer_1,
+  .footer_3,
+  .footer_end p{
+    font-size: 10px;
+  }
+
+  .footer_logo{
+    width: 100px;
+    height: 80px;
+  }
 }
