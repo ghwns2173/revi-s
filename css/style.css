@@ -2,12 +2,17 @@
   display: none;
 }
 
+.sub_menu_box{
+  display: none;
+}
+
 .header_area{
   width: 100%;
   height: 120px;
   background-color: #fff;
 
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
@@ -35,6 +40,10 @@
   display: flex;
   align-items: flex-start;
   font-size: 1.5rem;
+
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .main_menu .menu{
@@ -55,11 +64,22 @@
   background-color: #fff;
   height: auto;
   text-align: center;
-  display: none;
+  /* display: none; */
+
+  /* width: 25%; */
+  /* width: 200px; */
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .sub_menu_box li{
   padding: 10px;
+}
+
+.main_menu .menu{
+  position: relative;
 }
 
 .main_menu .menu::after{
@@ -87,6 +107,52 @@
   width: 24px;
   height: 24px;
   display: flex;
+}
+
+/* ---------------------- */
+/* side_menu */
+.side_menu{
+  width: 300px;
+  height: 100vh;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  position: fixed;
+  /* width: 100%; */
+  top: 0;
+  right: -100%;
+  z-index: 9999;
+
+  transition: 0.3s;
+}
+
+.side_menu .side_menu_list{
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  font-size: 30px;
+  text-transform: uppercase;
+
+}
+
+.side_menu .side_menu_list:hover{
+  color: #C41320;
+  font-weight: 700;
+}
+
+.m_btn.active{
+  position: relative;
+  right: 280px;
+  bottom: 0;
+}
+
+.side_menu.active{
+  right: 0;
 }
 
 
@@ -617,6 +683,7 @@ label{
     justify-content: space-between;
     width: 25px;
     height: 20px;
+    transition: 0.3s;
   }
 
   .m_btn span{
@@ -1034,6 +1101,18 @@ label{
     font-size: 10px;
   }
 
+  .shopSwiper .slide .image_box{
+    height: 300px;
+  }
+
+  .shopSwiper .slide .image_box img{
+    object-position: center top;
+  }
+
+  .col_box .image_box{
+    height: 300px;
+  }
+
   .sec_03 .headtext span{
     font-size: 20px;
   }
@@ -1050,6 +1129,10 @@ label{
     font-size: 12px;
   }
 
+  .sec_03 .subtext{
+    margin-bottom: 24px;
+  }
+
   .sec_04 .red_box .center .right .subtext{
     font-size: 12px;
   }
@@ -1064,6 +1147,10 @@ label{
 
   .sec_05 .col_box .named{
     font-size: 1rem;
+  }
+
+  .col_box .image_box{
+    height: 300px;
   }
 
   .f_top .footer_1,

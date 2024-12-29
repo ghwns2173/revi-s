@@ -51,6 +51,16 @@ document.addEventListener(`DOMContentLoaded`, function () {
     window.addEventListener('resize', toggleAOS);
 
 
+  // -------------------------------------------------
+  // side_menu
+  const sideBox = document.querySelector(`.side_menu`);
+  const hamburgerBtn = document.querySelector(`.m_btn`);
 
+  hamburgerBtn.addEventListener(`click`, function () { 
+    sideBox.classList.toggle(`active`);
+    this.classList.toggle(`active`);
+  });
+
+  
 
 }); // end
