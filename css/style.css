@@ -699,11 +699,16 @@ label{
 
   }
 
+  .side_menu_logo{
+    width: 100px;
+    height: 40px;
+  }
+
   .side_menu .side_menu_list{
     display: flex;
     flex-direction: column;
     /* width: 100%; */
-    font-size: 30px;
+    font-size: 20px;
     text-transform: uppercase;
   }
 
@@ -714,6 +719,24 @@ label{
 
   .side_menu.active{
     right: 0;
+  }
+  .side_menu .side_btn_box{
+    display: flex;
+  }
+
+  .side_menu .side_btn{
+    /* width: 50px;
+    height: 30px; */
+    padding: 10px;
+    border: 1px solid #222;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .side_menu .side_btn:nth-child(2){
+    margin-left: 20px;
   }
 
   .bannerSwiper{
@@ -932,11 +955,22 @@ label{
     bottom: 2px !important;
   }
 
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 8px !important;
+  }
+
+  .swiper-pagination-bullet{
+    width: 7px !important;
+    height: 7px !important;
+  }
+
   .sec_01 .inner_text_box .more_btn,
   .sec_04 .inner_text_box .more_btn{
     width: 100px;
     height: 40px;
     margin-top: 30px;
+    font-size: 10px;
   }
 
   .sec_01 .line,
@@ -1064,6 +1098,10 @@ label{
   .sec_03 .left_box{
     padding: 0;
   }
+
+  /* .sec_03 .shopSwiper{
+    height: 300px;
+  } */
 
   .f_email{
     justify-content: flex-start;
