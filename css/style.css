@@ -737,13 +737,14 @@ label{
   }
 
   .sec_01 .top_box .inner_text_box,
-  .sec_01 .inner_text_box,
+  .sec_01 .bottom_box .inner_text_box,
   .sec_04 .inner_text_box{
     align-items: center;
   }
 
   .sec_01 .bottom_box .right_box,
   .sec_04 .bottom_box .right_box{
+    width: 100%;
     margin: 0;
   }
 
@@ -925,6 +926,19 @@ label{
 
 @media (max-width:760px) {
 
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 2px !important;
+  }
+
+  .sec_01 .inner_text_box .more_btn,
+  .sec_04 .inner_text_box .more_btn{
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+  }
+
   .sec_01 .line,
   .sec_04 .line{
     width: 90px;
@@ -941,7 +955,7 @@ label{
   }
 
   .sec_02 .headtext{
-    font-size: 70px;
+    font-size: 55px;
   }
 
   .sec_02 .container{
@@ -1010,12 +1024,25 @@ label{
     height: auto;
   }
 
+  .swiper-horizontal>.swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal{
+    display: none;
+  }
+
   .sec_04 .center{
     gap: 20px;
   }
 
+  .sec_04 .red_box .top_text .line{
+    width: 70px;
+  }
+
+  .sec_04 .top_text{
+    margin-bottom: 30px;
+  }
+
   .sec_04 .red_box{
-    padding-top: 200px;
+    padding-top: 100px;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -1031,7 +1058,7 @@ label{
 
   .sec_03 .right_box{
     margin: 0;
-    margin-top: 70px;
+    margin-top: 30px;
   }
 
   .sec_03 .left_box{
@@ -1039,12 +1066,16 @@ label{
   }
 
   .f_email{
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .f_top .footer_1{
     font-size: 14px;
     word-break: keep-all;
+  }
+
+  .f_email{
+    width: 100%;
   }
 
   .f_email input{
@@ -1069,6 +1100,16 @@ label{
 
   .footer_end p{
     font-size: 12px;
+  }
+
+  .f_top .footer_1,
+  .footer_3,
+  .footer_end p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
   }
 }
 
@@ -1121,12 +1162,6 @@ label{
     font-size: 10px;
   }
 
-  .sec_01 .inner_text_box .more_btn,
-  .sec_04 .inner_text_box .more_btn{
-    width: 120px;
-    height: 40px;
-  }
-
   .sec_02 .subtext{
     font-size: 10px;
   }
@@ -1156,11 +1191,15 @@ label{
   }
 
   .sec_03 .left_box .shop_btn{
-    font-size: 12px;
+    font-size: 8px;
   }
 
   .sec_03 .subtext{
-    margin-bottom: 24px;
+    margin-bottom: 12px;
+  }
+
+  .sec_03 .left_box .shop_btn{
+    padding-bottom: 5px;
   }
 
   .sec_04 .red_box .center .right .subtext{
@@ -1192,5 +1231,10 @@ label{
   .footer_logo{
     width: 100px;
     height: 80px;
+  }
+
+  .shopSwiper .text_box{
+    font-size: 15px;
+    margin-top: 10px;
   }
 }
