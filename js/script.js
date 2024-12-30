@@ -79,6 +79,24 @@ document.addEventListener(`DOMContentLoaded`, function () {
     this.classList.toggle(`active`);
   });
 
-  
+  // top_btn
+  const topBtn = document.querySelector(`.top_btn`);
+
+  window.addEventListener(`scroll`, function () {
+    const scrollData = window.scrollY;
+
+    if (scrollData >= 300) {
+      topBtn.classList.add(`scroll`);
+    } else {
+      topBtn.classList.remove(`scroll`);
+    }
+  });
+
+  topBtn.addEventListener(`click`, function () {
+    window.scrollTo({
+      top: 0,
+      behavior:`smooth`
+    })
+  });
 
 }); // end
