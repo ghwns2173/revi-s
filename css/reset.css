@@ -29,6 +29,7 @@ img,svg{
 }
 
 button{
+  background-color: transparent;
   outline: none;
   border: none;
   

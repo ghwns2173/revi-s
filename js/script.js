@@ -1,6 +1,24 @@
 document.addEventListener(`DOMContentLoaded`, function () {
   AOS.init();
 
+  // -------------------------------------------------
+  // sub_menu
+  const menuItems = document.querySelectorAll(`.main_menu li`);
+  
+  for (const item of menuItems){
+    item.addEventListener(`mouseenter`, function () {
+      const subMenu = this.querySelector(`.sub_menu_box`);
+
+      subMenu.style.maxHeight = `${subMenu.scrollHeight}px`;
+    });
+
+    item.addEventListener(`mouseleave`, function () {
+      const subMenu = this.querySelector(`.sub_menu_box`);
+      subMenu.style.maxHeight = ``;
+      
+    });
+  };
+
   
   var swiper = new Swiper(".bannerSwiper", {
     loop: true,
