@@ -828,6 +828,7 @@ label{
   .sec_04 .bottom_box .inner_text_box .headtext{
     white-space: nowrap;
     font-size: 30px;
+    letter-spacing: 1.5px;
   }
 
     .sec_01 .bottom_box, .sec_04 .bottom_box{
@@ -847,6 +848,8 @@ label{
     justify-content: center;
     align-items: center;
   }
+
+  
   
   .sec_04 .top_text .headtext{
     font-size: 40px;
